@@ -1,5 +1,7 @@
 Changes for the Labyrinth-Plugin-Articles-Profiles
 ==================================================
 
+        - fixed internal template variable links.
+
 1.00    2014-04-19
         - first official release

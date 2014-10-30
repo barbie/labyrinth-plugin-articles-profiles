@@ -52,12 +52,12 @@ $SECTIONID  = 5;
 sub List {
     $cgiparams{sectionid} = $SECTIONID;
     shift->SUPER::List;
-    $tvars{profiles} = $tvars{data};
+    $tvars{profiles} = $tvars{mainarts};
 }
 
 sub Item {
     shift->SUPER::Item;
-    $tvars{who} = $tvars{$tvars{primary}};
+    $tvars{who} = $tvars{articles}->{$tvars{primary}};
 }
 
 # -------------------------------------
@@ -70,7 +70,7 @@ sub Admin {
 
 sub Edit {
     shift->SUPER::Edit;
-    $tvars{who} = $tvars{$tvars{primary}};
+    $tvars{who} = $tvars{articles}->{$tvars{primary}};
 }
 
 1;
