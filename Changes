@@ -1,6 +1,7 @@
 Changes for the Labyrinth-Plugin-Articles-Profiles
 ==================================================
 
+1.01    2014-11-10
         - fixed internal template variable links.
         - extended functional test suite.
 
